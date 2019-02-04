@@ -1,0 +1,35 @@
+@import "./partials/normalize";
+@import "./partials/fonts";
+
+$main-font: 16px "Arial", sans-serif;
+$main-color: #606465;
+//size
+$container-width: 1170px;
+
+body {
+  text-rendering: optimizeSpeed;
+  font: $main-font;
+  min-width: 320px;
+  color: $main-color;
+}
+.container {
+  max-width: $container-width;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+.page {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media all and(max-width: 1170px) {
+}
+@media all and(max-width: 992px) {
+}
+@media all and(max-width: 576px) {
+}
+
+@import "./partials/header";
+@import "./partials/footer";
