@@ -1,16 +1,20 @@
 @import "./partials/normalize";
 @import "./partials/fonts";
 
-$main-font: 16px "Arial", sans-serif;
+$main-font: 15px "Arial", sans-serif;
 $main-color: #606465;
 //size
-$container-width: 1170px;
-
+$container-width: 1180px;
+a {
+  color: #4e7cb3;
+  text-decoration: none;
+}
 body {
   text-rendering: optimizeSpeed;
   font: $main-font;
   min-width: 320px;
   color: $main-color;
+  background-color: #f2f3f7;
 }
 .container {
   max-width: $container-width;
@@ -23,6 +27,18 @@ body {
   z-index: 1;
   overflow: hidden;
 }
+.button {
+  height: 43px;
+  padding: 0 20px;
+  background-color: #f98b21;
+  transition: background-color 0.3s;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: #fa9738;
+  }
+}
 
 @media all and(max-width: 1170px) {
 }
@@ -33,3 +49,5 @@ body {
 
 @import "./partials/header";
 @import "./partials/footer";
+@import './partials/authorization';
+@import './partials/banner';

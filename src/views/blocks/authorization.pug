@@ -1,0 +1,20 @@
+.authorization
+  .container
+    .authorization__container
+      a(href="").authorization__logo
+        img.authorization__logo-image(src="img/logos/logo.png", alt="")
+      .authorization__title Войти в личный кабинет
+      form(action="").authorization__form
+        .authorization__form-group
+          .authorization__form-label
+            span Пользователь:
+            a(href="#") Регистрация
+          input.authorization__form-input(type="text" required)
+        .authorization__form-group
+          .authorization__form-label
+            span Пароль:
+            a(href="#") Забыли пароль?
+          input.authorization__form-input(type="password" required)
+        button.button.authorization__form-submit(type='submit') Войти
+      .authorization__text Нажимая кнопку «Войти», вы подтверждаете, что ознакомлены и согласны с условиями Соглашения о пользовании системой
+    include banner

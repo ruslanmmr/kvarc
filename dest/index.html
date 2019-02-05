@@ -21,11 +21,90 @@
   </head>
   <body>
     <!--header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__container"><a class="header__page-link" href="#">Личный кабинет</a>
+          <div class="header__numbers"><span class="header__numbers-ico"></span>
+            <button class="header__numbers-button"></button><a class="header__number" href="tel:"><span>8 (499)</span> 705 80-80</a>
+            <div class="header__numbers-dropdown"><a class="header__number" href="tel:"><span>8 (800)</span> 555-4-202 </a><a class="header__number" href="tel:"><span>8 (4967)</span> 555-200</a></div>
+          </div><a class="header__bell-link" href=""></a>
+        </div>
+      </div>
+    </header>
     <!--page-->
     <div class="page">
-      <main class="main"></main>
+      <main class="main">
+        <div class="authorization">
+          <div class="container">
+            <div class="authorization__container"><a class="authorization__logo" href=""><img class="authorization__logo-image" src="img/logos/logo.png" alt=""></a>
+              <div class="authorization__title">Войти в личный кабинет</div>
+              <form class="authorization__form" action="">
+                <div class="authorization__form-group">
+                  <div class="authorization__form-label"><span>Пользователь:</span><a href="#">Регистрация</a></div>
+                  <input class="authorization__form-input" type="text" required>
+                </div>
+                <div class="authorization__form-group">
+                  <div class="authorization__form-label"><span>Пароль:</span><a href="#">Забыли пароль?</a></div>
+                  <input class="authorization__form-input" type="password" required>
+                </div>
+                <button class="button authorization__form-submit" type="submit">Войти</button>
+              </form>
+              <div class="authorization__text">Нажимая кнопку «Войти», вы подтверждаете, что ознакомлены и согласны с условиями Соглашения о пользовании системой</div>
+            </div>
+            <div class="banner"> 
+              <div class="banner__container"><img class="banner__image" src="img/backgrounds/banner-bg.jpg" alt="">
+                <div class="banner__content"><span class="banner__title">Подключен интернет Кварц?</span><span class="banner__text">Пакет услуг интернет и цифровое ТВ с максимальной выгодой!</span><a class="banner__link" href="#">подключить</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__section">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_padding"><a class="footer__link footer__link_strong" href="#">Акции</a></li>
+              <li class="footer__item"><a class="footer__link footer__link_strong" href="#">Интернет+ТВ</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Интернет + Цифровое ТВ</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Интернет + IPTV</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <ul class="footer__list">
+              <li class="footer__item footer__item_padding"><a class="footer__link footer__link_strong" href="#">Интернет</a></li>
+              <li class="footer__item"><a class="footer__link footer__link_strong" href="#">Телевидение</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Цифровое ТВ</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">IPTV</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="#">Видеонаблюдение</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Интернет+ТВ для частного дома</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Услуги для бизнеса</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Оплата услуг</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Помощь</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <div class="footer__section-block"><span class="footer__section-block-label">Круглосуточная <br> служба поддержки</span>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link footer__link_strong" href="tel:84997058080">8 (499) 705 80-80</a></li>
+                <li class="footer__item"><a class="footer__link footer__link_strong" href="tel:88005554202">8 (800) 555-4-202</a></li>
+                <li class="footer__item"><a class="footer__link footer__link_strong" href="tel:84967555200">8 (4967) 555-200</a></li>
+              </ul>
+            </div>
+            <div class="footer__section-block"><span class="footer__section-block-title">Центральный офис</span><span class="footer__section-block-label">Режим работы</span>
+              <p class="footer__section-block-time">с 9:00 до 20:00, пн. – сб.</p><span class="footer__section-block-label">Наш адрес</span>
+              <p class="footer__section-block-adress">142100 г. Подольск<br> ул. Комсомольская д.59</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/libs.min.js">                 </script>
     <script src="js/common.min.js"></script>
   </body>

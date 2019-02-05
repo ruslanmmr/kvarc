@@ -1,0 +1,41 @@
+.banner {
+  width: 285px;
+  background-color: #fff;
+  flex-shrink: 0;
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__content {
+    padding: 50px 40px 25px 40px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    display: block;
+    color: #071444;
+    padding-bottom: 30px;
+  }
+  &__text {
+    color: #071444;
+    padding-bottom: 30px;
+    display: block;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 43px;
+    color: #fff;
+    text-decoration: none !important;
+    background-color: #7962a6;
+    transition: 0.3s;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #8a77b0;
+    }
+  }
+}

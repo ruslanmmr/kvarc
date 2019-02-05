@@ -1,0 +1,116 @@
+.footer {
+  background-color: #505258;
+  padding: 40px 0 50px 0;
+  color: #b5b8c3;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__section {
+    padding-right: 20px;
+    &:last-child {
+      padding: 0;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+      padding-bottom: 10px;
+    &:last-child {
+      padding: 0;
+    }
+    &_padding {
+      padding-bottom: 20px;
+    }
+  }
+  &__link {
+    color: #b5b8c3;
+    text-decoration: none !important;
+    transition: color 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    &:hover {
+      color: #c2c6d7;
+    }
+    &_strong {
+      font-size: 18px;
+    }
+  }
+  &__section-block-label {
+    color: #b5b8c3;
+    font-size: 14px;
+    padding-bottom: 9px;
+    display: block;
+  }
+  &__section-block {
+    padding-bottom: 20px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .footer__item {
+      padding-bottom: 5px;
+    }
+  }
+  &__section-block-title {
+    font-size: 18px;
+    display: block;
+    padding-bottom: 20px;
+  }
+  &__section-block-time {
+    font-size: 18px;
+    margin: 0;
+    display: block;
+    padding-bottom: 20px;
+  }
+  &__section-block-adress {
+    margin: 0;
+    display: block;
+  }
+}
+
+@media all and(max-width: 992px) {
+  .footer {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__section:nth-child(3) {
+      padding-right: 0;
+    }
+    &__section:last-child {
+      width: 100%;
+      padding-top: 25px;
+      display: flex;
+    }
+    &__section-block {
+      padding-right: 20px;
+      &:first-child {
+        order: 2;
+      }
+    }
+  }
+}
+@media all and(max-width: 576px) {
+  .footer {
+    .container {
+      padding: 0 25px;
+    }
+    &__section {
+      width: 100%;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      &:last-child {
+        padding: 0;
+      }
+    }
+    &__section-block {
+      width: 100%;
+      padding-right: 0;
+      &:last-child {
+        order: 2;
+      }
+    }
+  }
+}
