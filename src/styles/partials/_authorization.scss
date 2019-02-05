@@ -88,10 +88,10 @@
     }
   }
 }
-@media all and(max-width: 992px) {
+@media all and(max-width: 768px) {
   .authorization {
     .banner {
-      width: 200px;
+      width: 240px;
       &__content {
         padding: 25px 20px 15px 20px;
       }
@@ -100,10 +100,6 @@
         padding-bottom: 20px;
       }
     }
-  }
-}
-@media all and(max-width: 768px) {
-  .authorization {
     &__form-group {
       display: block;
     }
