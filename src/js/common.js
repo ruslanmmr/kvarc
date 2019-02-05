@@ -10,7 +10,8 @@ var innerWidth = $('body').innerWidth();
 
 function headerNumbers() {
   var button = $('.header__numbers-button'),
-      block = $('.header__numbers-dropdown');
+      block = $('.header__numbers-dropdown'),
+      flag = 1;
 
   function stateCheck() {
     block.each(function() {
@@ -22,13 +23,21 @@ function headerNumbers() {
     });
   }
   function toggleHidden() {
-    if(innerWidth<769) {
+    if(innerWidth<769 && flag==1) {
       block.removeClass('header__numbers-dropdown_visible');
       stateCheck();
-    } else {
+      flag=2;
+    } else if(innerWidth>768 && flag==2) {
       block.addClass('header__numbers-dropdown_visible');
       stateCheck();
+      flag=1;
     }
+  }
+  
+  if(innerWidth>769) {
+    flag=2;
+  } else {
+    flag=1;
   }
 
   toggleHidden();
