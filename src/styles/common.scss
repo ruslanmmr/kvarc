@@ -9,6 +9,9 @@ a {
   color: #4e7cb3;
   text-decoration: none;
 }
+input {
+  -webkit-appearance: none;
+}
 body {
   text-rendering: optimizeSpeed;
   font: $main-font;
