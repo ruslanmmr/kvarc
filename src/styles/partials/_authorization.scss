@@ -106,6 +106,9 @@
 @media all and(max-width: 576px) {
   .authorization {
     display: block;
+    &__text {
+      max-width: 100%;
+    }
     &__container {
       padding: 0;
     }

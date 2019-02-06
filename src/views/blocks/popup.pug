@@ -1,0 +1,132 @@
+div(id='popup1').popup.popup__type1.modal_container
+  button.popup__close.popup-close
+  .popup__container
+    h2.popup__title Тарифы (ЦТВ)
+    ul.popup__list
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Тариф Базовый
+          span.action-label
+            span %
+            | Акция
+        .popup__item-section
+          span.popup__item-count 92
+          span.popup__item-text ТВ каналы
+        .popup__item-section
+          span.popup__item-old-price 400
+          span.popup__item-price 310 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Пакет XL (Кино+Спорт)
+        .popup__item-section
+          span.popup__item-count 12
+          span.popup__item-text ТВ каналы
+        .popup__item-section
+          span.popup__item-price 498 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Спорт
+        .popup__item-section
+          span.popup__item-count 4
+          span.popup__item-text ТВ каналы
+        .popup__item-section
+          span.popup__item-price 149 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Кино
+        .popup__item-section
+          span.popup__item-count 8
+          span.popup__item-text ТВ каналы
+        .popup__item-section
+          span.popup__item-price 149 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Наш футбол
+        .popup__item-section
+          span.popup__item-count 1
+          span.popup__item-text ТВ каналы
+        .popup__item-section
+          span.popup__item-price 219 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Стартовый
+        .popup__item-section
+          span.popup__item-count 45
+          span.popup__item-text ТВ каналы
+        .popup__item-section
+          span.popup__item-price 195 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+    a(href="#").popup__link.button.button_style2 Подключить Кабельное телевидение
+div(id='popup2').popup.popup__type1.modal_container.mfp-with-anim.mfp-hide
+  button.popup__close.popup-close
+  .popup__container
+    h2.popup__title Тарифы
+    ul.popup__list
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Интернет 30
+          span.action-label
+            span %
+            | Акция
+        .popup__item-section
+          span.popup__item-count 30 Мбит/с
+          span.popup__item-text Скорость
+        .popup__item-section
+          span.popup__item-old-price 717
+          span.popup__item-price 399 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Интернет 60 
+        .popup__item-section
+          span.popup__item-count 60 Мбит/с
+          span.popup__item-text Скорость
+        .popup__item-section
+          span.popup__item-price 449 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Интернет 100 
+        .popup__item-section
+          span.popup__item-count 100 Мбит/с
+          span.popup__item-text Скорость
+        .popup__item-section
+          span.popup__item-price 649 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+      li.popup__item
+        .popup__item-section
+          span.popup__item-title Интернет 350 
+        .popup__item-section
+          span.popup__item-count 350 Мбит/с
+          span.popup__item-text Скорость
+        .popup__item-section
+          span.popup__item-price 849 руб./мес
+        .popup__item-section
+          a(href="#").popup__item-link.button.button_style1 Подключить
+div(id='popup3').popup.popup__type2.modal_container.mfp-with-anim.mfp-hide
+  button.popup__close.popup-close
+  .popup__container
+    h2.popup__title Подтвержние операции
+    span.popup__sub-text Для подтверждения операции введите код, отправленный на номер +7926*****56 или введите пуш-уведомление
+    form(action="").popup__form
+      .popup__form-group
+        input.popup__form-input(type="number" required placeholder="Введите код")
+      ul.popup__form-group-list
+        .popup__form-group-item
+          button.button.button_style3.popup__button.popup-close Отменить
+        .popup__form-group-item
+          button(type='submit').button.button_style1.popup__button Отправить

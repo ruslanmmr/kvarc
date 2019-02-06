@@ -1,0 +1,42 @@
+.myservices
+  .myservices__container.block__container
+    .myservices__section
+      span.myservices__title Информация о контракте
+      .myservices__table
+        .myservices__table-row
+          span.myservices__table-item Номер контракта
+          span.myservices__table-item 19579
+        .myservices__table-row
+          span.myservices__table-item Баланс
+          span.myservices__table-item 27 Р
+      span.myservices__title Информация об услугах на контракте
+      .myservices__table
+        .myservices__table-row
+          span.myservices__table-item Название услуги
+          span.myservices__table-item Интернет+ТВ
+        .myservices__table-row
+          span.myservices__table-item Дата подключения
+          span.myservices__table-item 29.09.2016 00.00.00
+        .myservices__table-row
+          span.myservices__table-item Статус
+          span.myservices__table-item Включен
+      .myservices__table
+        .myservices__table-row
+          span.myservices__table-item Название тарифного плана
+          span.myservices__table-item ех.ТП-1
+        .myservices__table-row
+          span.myservices__table-item Имя пользователя
+          span.myservices__table-item ivanovti12345
+        .myservices__table-row
+          span.myservices__table-item Стоимость
+          span.myservices__table-item 0 Р
+    .myservices__section
+      span.activity-label.activity-label_disable
+        span 
+        | Услуга заблокирована
+      span.myservices__text Если вы хотите приостановить оказание услуги на короткий период времени, нажимте кнопку «Отменить».
+      .myservices__pause
+        span.myservices__pause-label Приостановить с
+        form(action="").myservices__pause-form
+          input(type="text" placeholder="дд.мм.гггг" required).myservices__pause-date
+          button(type='submit').myservices__pause-form-button.button.button_style1 Добровольная блокировка

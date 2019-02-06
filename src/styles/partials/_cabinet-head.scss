@@ -79,7 +79,7 @@
     &_active {
       color: #f98b21;
       &:before {
-        opacity: 1;
+        transform: scaleX(1);
       }
       svg {
         path {

@@ -1,0 +1,23 @@
+.telephone
+  .telephone__container.block__container
+    span.telephone__title Привязать телефон к учетной записи
+    p.text В настоящий момент к Вашей учетной записи не привязан ни один телефонный номер. Чтобы привязать телефонный номер заполните поле "Номер телефона" и нажмите кнопку «Привязать».
+    form.telephone__form(action="")
+      .telephone__form-group
+        span.telephone__form-label Номер телефона:
+      .telephone__form-group
+        input(type="text").telephone__form-input
+      .telephone__form-group
+        a(href='#popup3').telephone__form-button.popup_link.button.button_style1 Привязать
+    span.telephone__list-title Допустимые форматы ввода:
+    ul.telephone__list 
+      li.telephone__item 8xxxxxxxxxx
+      li.telephone__item 8-xxx-xxx-xx-xx
+      li.telephone__item 8(xxx)xxx-xx-xx
+      li.telephone__item 7xxxxxxxxxx
+      li.telephone__item 7-xxx-xxx-xx-xx
+      li.telephone__item 7(xxx)xxx-xx-xx
+    span.telephone__list-title Для городских номеров:
+    ul.telephone__list 
+      li.telephone__item xxxxxx
+      li.telephone__item xx-xx-xx

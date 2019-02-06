@@ -2,8 +2,6 @@
   padding-bottom: 15px;
   &__container {
     display: flex;
-    background-color: #fff;
-    padding: 40px;
   }
   &__section {
     width: 50%;
@@ -98,7 +96,7 @@
       font-size: 20px;
     }
     &-title {
-      padding: 0 0 13px 0;
+      padding: 0 0 7px 0;
       display: inline-block;
       color: #b7b7b7;
       font-weight: bold;
@@ -108,11 +106,11 @@
 
 @media (max-width: 1180px) {
   .main-info {
-    &__container {
-      padding: 40px 30px;
-    }
     &__section:last-child {
       padding-left: 30px;
+    }
+    &__money-title {
+      padding-right: 50px;
     }
   }
 }
@@ -160,9 +158,6 @@
       &:after {
         display: none;
       }
-    }
-    &__container {
-      padding: 25px 25px 35px 25px;
     }
     &__table {
       padding: 0 0 15px 0;

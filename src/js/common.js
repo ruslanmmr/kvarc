@@ -3,6 +3,8 @@ $(document).ready(function () {
   personalNumber();
   circles();
   mobileNav();
+  date();
+  modalMagnificBasket();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -105,5 +107,26 @@ function mobileNav() {
   closeButton.on('click', function() {
     nav.fadeOut();
   })  
+}
+function date() {
+  $('.myservices__pause-date').datepicker({
+    // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
+    minDate: new Date()
+  })
+}
+function popup() {
+  $('.popup').magnificPopup(
+);
+}
+function modalMagnificBasket() {
+	$('.popup_link').magnificPopup({
+		mainClass: 'mfp-fade',
+		closeBtnInside: true,
+		midClick: true,
+    fixedContentPos: true
+  });
+  $('.popup-close').on('click', function() {
+    $.magnificPopup.close();
+  });
 }
 

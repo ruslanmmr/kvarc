@@ -24,19 +24,7 @@
     display: block;
   }
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 43px;
-    color: #fff;
-    text-decoration: none !important;
-    background-color: #7962a6;
-    transition: 0.3s;
     text-transform: uppercase;
-    &:hover {
-      background-color: #8a77b0;
-    }
   }
 }
 .banner2 {
@@ -49,5 +37,23 @@
     width: 100%;
     height: auto;
     display: block;
+  }
+}
+
+@media all and(max-width: 992px) {
+  .banner1 {
+    width: 220px;
+    &__content {
+      padding: 25px 20px;
+    }
+  }
+}
+@media all and(max-width: 576px) {
+  .banner1 {
+    width: 100%;
+    margin-top: 60px;
+    &__content {
+      padding: 25px 20px;
+    }
   }
 }

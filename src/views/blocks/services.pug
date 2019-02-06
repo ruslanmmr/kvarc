@@ -1,6 +1,6 @@
 .services
-  .services__container
-    h2.services__title Мои услуги
+  .services__container.block__container
+    h2.services__title.block__title Мои услуги
     .services__content
       .services__item
         span.services__item-title Интернет
@@ -8,18 +8,18 @@
           span.services__item-count 10
           span.services__item-unit Мбит/сек
         span.services__item-sub-title Тариф 2 в 1
-        a(href="#").services__item-link Увеличить скорость
+        a(href="#popup2").services__item-link.popup_link Увеличить скорость
       .services__item
         span.services__item-title Телевидение
         .services__item-circle.services__item-circle-bonus(data-percent='25')
           span.services__item-count 90
           span.services__item-unit каналов
         span.services__item-sub-title Тариф 2 в 1
-        a(href="#").services__item-link Добавить каналы
+        a(href="#popup1").popup_link.services__item-link Добавить каналы
       .services__item
         span.services__item-title Бонусы
         .services__item-circle.services__item-circle-cashback(data-percent='25')
           span.services__item-count 6
           span.services__item-unit Бонусов
         span.services__item-sub-title Cashback
-        a(href="#").services__item-link Обменять кешбэк
+        a(href="#").services__item-link.popup_link Обменять кешбэк

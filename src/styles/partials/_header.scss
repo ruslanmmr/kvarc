@@ -105,7 +105,7 @@
       display: block;
     }
     &__numbers {
-      padding: 0 19px;
+      padding: 0 19px 0 7px;
     }
     &__numbers-dropdown {
       position: absolute;
@@ -113,10 +113,11 @@
       width: 100%;
       transform: translateY(100%);
       background-color: #505258;
-      padding: 5px 15px 15px 15px;
+      padding: 5px 19px 15px 7px;
       text-align: right;
       visibility: hidden;
       opacity: 0;
+      left: 0;
       .header__number {
         margin: 0;
         display: block;
