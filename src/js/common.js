@@ -120,10 +120,11 @@ function popup() {
 }
 function modalMagnificBasket() {
 	$('.popup_link').magnificPopup({
-		mainClass: 'mfp-fade',
 		closeBtnInside: true,
 		midClick: true,
-    fixedContentPos: true
+    fixedContentPos: true,
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
   });
   $('.popup-close').on('click', function() {
     $.magnificPopup.close();
