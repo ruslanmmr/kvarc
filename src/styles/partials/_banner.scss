@@ -1,4 +1,4 @@
-.banner {
+.banner1 {
   width: 285px;
   background-color: #fff;
   flex-shrink: 0;
@@ -37,5 +37,17 @@
     &:hover {
       background-color: #8a77b0;
     }
+  }
+}
+.banner2 {
+  width: 100%;
+  &__link {
+    display: block;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }

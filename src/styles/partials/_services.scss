@@ -1,0 +1,133 @@
+.services {
+  padding-bottom: 15px;
+  &__container {
+    background-color: #fff;
+    padding: 25px 20px 50px 20px;
+  }
+  &__content {
+    margin: 0 -25px;
+    padding: 20px 0 0 0;
+    display: flex;
+  }
+  &__title {
+    font-size: 20px;
+    padding-left: 20px;
+    margin: 0;
+  }
+  &__item {
+    width: 33.33%;
+    padding: 0 25px;
+  }
+  &__item-title {
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  &__item-sub-title {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+  }
+  &__item-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 116px;
+    height: 116px;
+    margin: 0 auto;
+    position: relative;
+    svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .timer {
+      display: none;
+    }
+  }
+  &__item-link {
+    min-height: 43px;
+    text-align: center;
+    border: 1px solid #7c6aad;
+    margin-top: 35px;
+    color: #7c6aad;
+    display: block;
+    width: 100%;
+    padding: 11px 20px 11px 20px;
+    transition: 0.3s;
+    &:hover {
+      background-color: #7c6aad;
+      color: #fff;
+    }
+  }
+  &__item-count {
+    font-size: 36px;
+    color: #676a6c;
+    position: relative;
+    z-index: 2;
+  }
+  &__item-unit {
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services {
+    &__container {
+      padding: 40px 30px;
+    }
+    &__item {
+      padding: 0 15px;
+    }
+    &__content {
+      margin: 0 -15px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .services {
+    padding-top: 15px;
+    &__title {
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .services {
+    &__container {
+      padding: 20px 15px 35px 15px;
+    }
+    &__content {
+      margin: 0 -5px;
+    }
+    &__title {
+      padding-bottom: 5px;
+    }
+    &__item {
+      padding: 0 5px;
+    }
+    &__item-circle {
+      width: 85px;
+      height: 85px;
+    }
+    &__item-title,
+    &__item-sub-title {
+      font-size: 12px;
+    }
+    &__item-count {
+      line-height: 90%;
+    }
+    &__item-link {
+      padding: 10px;
+      font-size: 12px;
+      margin-top: 30px;
+      min-height: 37px;
+    }
+  }
+}

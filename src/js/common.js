@@ -1,5 +1,8 @@
 $(document).ready(function () {
   headerNumbers();
+  personalNumber();
+  circles();
+  mobileNav();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -50,5 +53,57 @@ function headerNumbers() {
     block.toggleClass('header__numbers-dropdown_visible');
     stateCheck();
   });
+}
+function personalNumber() {
+  var button = $('.personal-number__button'),
+      block = $('.personal-number__dropdown-container');
+  button.on('click', function() {
+    block.slideToggle();
+    $(this).toggleClass('personal-number__button_active');
+  })
+}
+function circles() {
+  $(function(){
+    $(".services__item-circle-net").circliful({
+      animation: 1,
+      animationStep: 5,
+      foregroundBorderWidth: 12,
+      backgroundBorderWidth: 12,
+      foregroundColor: '#5393e9',
+      backgroundColor: '#dcdcdc',
+      animateInView: true
+    });
+    $(".services__item-circle-bonus").circliful({
+      animation: 1,
+      animationStep: 5,
+      foregroundBorderWidth: 12,
+      backgroundBorderWidth: 12,
+      foregroundColor: '#7ab651',
+      backgroundColor: '#dcdcdc',
+      animateInView: true
+    });
+    $(".services__item-circle-cashback").circliful({
+      animation: 1,
+      animationStep: 5,
+      foregroundBorderWidth: 12,
+      backgroundBorderWidth: 12,
+      foregroundColor: '#7962a6',
+      backgroundColor: '#dcdcdc',
+      animateInView: true
+    });
+    $(".circliful").attr('viewBox', '37 37 127 127');
+  });
+}
+function mobileNav() {
+  var closeButton = $('.mobile-nav__nav-close'),
+      openButton = $('.mobile-head__nav-open'),
+      nav = $('.mobile-nav');
+
+  openButton.on('click', function() {
+    nav.fadeIn();
+  }) 
+  closeButton.on('click', function() {
+    nav.fadeOut();
+  })  
 }
 

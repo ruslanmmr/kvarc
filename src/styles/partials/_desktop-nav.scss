@@ -1,0 +1,47 @@
+.desktop-nav {
+  &__list {
+    padding: 44px 0 0 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
+    padding-bottom: 20px;
+    &:last-child {
+      padding: 0;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 4px 0 0 42px;
+    color: #606465;
+    height: 25px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+    }
+    &_1 {
+      &:before {
+        background: url('../img/icons/ico-pay.svg') no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    &_2 {
+      &:before {
+        background: url('../img/icons/ico-support.svg') no-repeat center center;
+        background-size: 100%;
+      }
+    }
+    &_3 {
+      &:before {
+        background: url('../img/icons/ico-gear.svg') no-repeat center center;
+        background-size: 100%;
+      }
+    }
+  }
+}

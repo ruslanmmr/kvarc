@@ -1,0 +1,23 @@
+@import "./partials/main-info";
+@import "./partials/services";
+@import "./partials/post-links";
+
+.main {
+  .banner2 {
+    padding-bottom: 15px;
+  }
+}
+
+@media all and(max-width: 768px) {
+  .page_cabinet {
+    .main-info {
+      order: 2;
+    }
+    .banner2 {
+      order: 3;
+    }
+    .post-links {
+      order: 5;
+    }
+  }
+}

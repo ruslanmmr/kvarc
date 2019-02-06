@@ -1,0 +1,174 @@
+.mobile-head {
+  color: #fff;
+  position: relative;
+  display: none;
+  &__container {
+    padding: 20px 12px 40px 15px;
+    background-color: #4a4c51;
+    border-top: 1px solid #6f6f6f;
+    position: relative;
+    z-index: 1;
+  }
+  &__head-center {
+    padding: 5px 0 0 0;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__logo {
+    width: 43px;
+    height: auto;
+  }
+  &__nav-open {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    span {
+      display: block;
+      width: 33px;
+      height: 2px;
+      margin: 4px 0;
+      background-color: #fff;
+    }
+  }
+  &__name {
+    text-align: center;
+    padding-bottom: 3px;
+  }
+  &__adress {
+    text-align: center;
+    font-size: 11px;
+  }
+  .personal-number {
+    padding: 10px 0 0 8px;
+    &:after {
+      display: none;
+    }
+    &__item {
+      color: #fff;
+      font-size: 18px;
+      padding-left: 25px;
+      height: 30px;
+    }
+    &__button:before {
+      background: url('../img/icons/mobile-head-arrow.svg') no-repeat center center;
+      background-size: contain;
+      background-size: 10px 7px;
+      transform: rotate(0);
+    }
+    &__button_active:before {
+      transform: rotate(180deg);
+    }
+  }
+  &__money {
+    padding-top: 15px;
+  }
+  &__money-title {
+    display: block;
+    padding: 15px 0 5px 0;
+  }
+  &__money-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__subscriber-fee {
+    padding-top: 5px;
+    display: block;
+  }
+  &__money-add-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f98b21;
+    transition: background-color 0.3s;
+    border-radius: 100%;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+    }
+    &:before {
+      width: 25px;
+      height: 2px;
+    }
+    &:after {
+      width: 2px;
+      height: 25px;
+    }
+    &:hover {
+      background-color: #fa9738;
+    }
+  }
+  &__money-count {
+    font-size: 45px;
+  }
+}
+.mobile-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 15px 32px 15px;
+  z-index: 2;
+  background-color: #fff;
+  display: none;
+  .desktop-nav {
+    position: relative;
+    z-index: 1;
+    &__list {
+      padding: 0;
+    }
+  }
+  &__nav-close {
+    position: absolute;
+    right: 12px;
+    width: 45px;
+    height: 45px;
+    z-index: 2;
+    top: 20px;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: #7d8284;
+      bottom: 21px;
+      right: 9px;
+      width: 27px;
+      bottom: 21px;
+      height: 2px;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media all and(max-width: 768px) {
+  .mobile-head {
+    display: block;
+  }
+}

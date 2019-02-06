@@ -1,6 +1,6 @@
 module.exports = function () {
     $.gulp.task("libs", function () {
-        return $.gulp.src("./src/libs/**/*.js")
+        return $.gulp.src(["./src/libs/**/*.js", "!./src/libs/**/jquery.js"])
             .pipe($.sourcemaps.init())
             .pipe($.babel({presets: ["@babel/preset-env"]}))
             .pipe($.concat("libs.js"))

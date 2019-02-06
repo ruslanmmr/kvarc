@@ -19,6 +19,7 @@
     <!--styles for all pages-->
     <link rel="stylesheet" href="styles/libs.min.css">
     <link rel="stylesheet" href="styles/common.min.css">
+    <link rel="stylesheet" href="styles/auth.min.css">
   </head>
   <body>
     <!--header-->
@@ -33,10 +34,10 @@
       </div>
     </header>
     <!--page-->
-    <div class="page">
-      <main class="main">
-        <div class="authorization">
-          <div class="container">
+    <div class="page auth__page">
+      <div class="container">
+        <main class="main">
+          <div class="authorization">
             <div class="authorization__container"><a class="authorization__logo" href=""><img class="authorization__logo-image" src="img/logos/logo.png" alt=""></a>
               <div class="authorization__title">Войти в личный кабинет</div>
               <form class="authorization__form" action="">
@@ -52,14 +53,14 @@
               </form>
               <div class="authorization__text">Нажимая кнопку «Войти», вы подтверждаете, что ознакомлены и согласны с условиями Соглашения о пользовании системой</div>
             </div>
-            <div class="banner"> 
-              <div class="banner__container"><img class="banner__image" src="img/backgrounds/banner-bg.jpg" alt="">
-                <div class="banner__content"><span class="banner__title">Подключен интернет Кварц?</span><span class="banner__text">Пакет услуг интернет и цифровое ТВ с максимальной выгодой!</span><a class="banner__link" href="#">подключить</a></div>
+            <div class="banner1"> 
+              <div class="banner1__container"><img class="banner1__image" src="img/backgrounds/banner-bg.jpg" alt="">
+                <div class="banner1__content"><span class="banner1__title">Подключен интернет Кварц?</span><span class="banner1__text">Пакет услуг интернет и цифровое ТВ с максимальной выгодой!</span><a class="banner1__link" href="#">подключить</a></div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
     <!--footer-->
     <div class="footer">
@@ -106,6 +107,7 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/libs.min.js">                 </script>
     <script src="js/common.min.js"></script>
   </body>

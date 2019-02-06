@@ -1,0 +1,23 @@
+.mobile-head
+  .mobile-nav
+    .mobile-nav__container
+      button.mobile-nav__nav-close
+      include desktop-nav
+  .mobile-head__container
+    .mobile-head__head
+      img(src="img/logos/mobile-logo.png", alt="").mobile-head__logo
+      .mobile-head__head-center
+        .mobile-head__name Иванов Иван Иванович
+        .mobile-head__adress Высотная ул., 3б, под.1, кв.55
+        include personal-number
+      button.mobile-head__nav-open
+        span
+        span
+        span
+    .mobile-head__money
+      span.activity-label.activity-label_active Услуга активна
+      span.mobile-head__money-title Баланс:
+      .mobile-head__money-row
+        span.mobile-head__money-count 327,53 ₽
+        a(href="#").mobile-head__money-add-link
+      span.mobile-head__subscriber-fee Абон. плата: 630 руб./мес.

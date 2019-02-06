@@ -1,0 +1,46 @@
+.post-links {
+  background-color: #fff;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    border-bottom: 1px solid #c4c4c4;
+    &:last-child {
+      border: 0;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 25px 30px;
+    font-size: 16px;
+    color: #676a6c;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      right: 25px;
+      top: 50%;
+      position: absolute;
+      width: 13px;
+      height: 10px;
+      margin: -5px;
+      background: url("../img/icons/arrow-right.svg") no-repeat center center;
+      background-size: 100%;
+      transform: rotate(-90deg);
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .post-links {
+    &__link {
+      padding: 25px 15px;
+      &:after {
+        right: 15px;
+      }
+    }
+  }
+}

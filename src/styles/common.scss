@@ -6,12 +6,15 @@ $main-color: #606465;
 //size
 $container-width: 1180px;
 a {
-  color: #4e7cb3;
+  color: #8c79c0;
   text-decoration: none;
 }
 input {
   -webkit-appearance: none;
   border-radius: 0;
+  height: 43px;
+  border: 1px solid #acacac;
+  padding: 0 10px;
 }
 body {
   text-rendering: optimizeSpeed;
@@ -30,6 +33,27 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  &_with-aside {
+    padding: 75px 0 50px 0;
+    .container {
+      display: flex;
+    }
+    .main {
+      width: 100%;
+    }
+    .aside {
+      width: 212px;
+      flex-shrink: 0;
+      box-sizing: content-box;
+      padding-right: 35px;
+      flex-shrink: 0;
+    }
+  }
+}
+.aside {
+  .banner2 {
+    padding: 100px 0 0 0;
+  }
 }
 .button {
   height: 43px;
@@ -43,15 +67,62 @@ body {
     background-color: #fa9738;
   }
 }
+.activity-label {
+  padding-left: 32px;
+  position: relative;
+  line-height: 20px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #676a6c;
+  }
+  &_active {
+    color: #79b74d;
+    &:before {
+      background: #79b74d url('../img/icons/activity-label.svg') no-repeat center center;
+      background-size: 16px auto;
+    }
+  }
+}
 
-@media all and(max-width: 1170px) {
+@media all and(max-width: 1180px) {
+
 }
 @media all and(max-width: 992px) {
+  .page_with-aside .aside {
+    .aside {
+      padding-right: 20px;
+    }
+  }
+}
+@media all and(max-width: 768px) {
+  .page_with-aside {
+    padding: 0;
+    .container {
+      padding: 0;
+    }
+    .aside {
+      display: none;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
 }
 @media all and(max-width: 576px) {
 }
 
 @import "./partials/header";
 @import "./partials/footer";
-@import './partials/authorization';
 @import './partials/banner';
+@import './partials/cabinet-head';
+@import './partials/desktop-nav';
+@import './partials/personal-number';
+@import './partials/mobile-head';

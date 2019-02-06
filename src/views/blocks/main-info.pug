@@ -1,0 +1,36 @@
+.main-info
+  .main-info__container
+    .main-info__section
+      .main-info__name Иванов Иван Иванович
+      .main-info__adress Высотная ул., 3б, под.1, кв.55
+      .main-info__table
+        .main-info__table-row
+          span.main-info__table-item <strong>Л/сч:</strong>
+          span.main-info__table-item 19579
+        .main-info__table-row
+          span.main-info__table-item <strong>Тариф:</strong> <span>2 в 1</span>
+          span.main-info__table-item 629 руб./мес.
+        .main-info__table-row
+          span.main-info__table-item <strong>Cкорость:</strong>
+          span.main-info__table-item 10 Мбит/cек
+        .main-info__table-row
+          span.main-info__table-item <strong>Пакет:</strong> <span>ТВ Базовый</span>
+          span.main-info__table-item 90 каналов 
+        .main-info__table-row
+          span.main-info__table-item <strong>Оборудование:</strong> <span>Кам-модуль (аренда)</span>
+          span.main-info__table-item 1 руб./мес.
+      a(href="#").main-info__link Условия тарифа
+    .main-info__section
+      .main-info__money
+        .main-info__money-head
+          span.main-info__money-title Баланс:
+          span.activity-label.activity-label_active Услуга активна
+        span.main-info__money-count 0 руб.
+        span.main-info__subscriber-fee Абон. плата: 630 руб./мес.
+      .main-info__form
+        span.main-info__form-title Оплатить до 25.11.2018
+        form(action="")
+          input(type="number" required)
+          span.main-info__form-symbol ₽
+          button(type="submit").button Пополнить
+        a(href="#").main-info__link Подключить обещанный платеж

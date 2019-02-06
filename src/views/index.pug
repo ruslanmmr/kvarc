@@ -2,14 +2,17 @@ doctype html
 html(lang="ru")
   head
     include blocks/head
+    link(rel="stylesheet" href="styles/auth.min.css")
   body
     //header
     include blocks/header
     //page
-    .page
-      main.main
-        include blocks/authorization
+    .page.auth__page
+      .container
+        main.main
+          include blocks/authorization
     //footer
     include blocks/footer
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
     script(src="js/libs.min.js")                  
     script(src="js/common.min.js")
