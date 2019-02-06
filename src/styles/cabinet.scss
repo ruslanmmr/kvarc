@@ -10,6 +10,9 @@
 
 @media all and(max-width: 768px) {
   .page_cabinet {
+    .main {
+      padding-bottom: 0;
+    }
     .main-info {
       order: 2;
     }
