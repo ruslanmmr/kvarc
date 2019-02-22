@@ -1,0 +1,37 @@
+.statistics
+  .statistics__container.block__container
+    .statistics__nav
+      ul.statistics__nav-list
+        li.statistics__nav-item
+          a(href="#").statistics__nav-link.main-link Сессии
+        li.statistics__nav-item
+          a(href="#").statistics__nav-link.main-link Трафик
+        li.statistics__nav-item
+          a(href="#").statistics__nav-link.main-link.statistics__nav-link_active Платежи
+    span.statistics__text На этой странице вы можете посмотреть информацию о совершенных выходах в интернет
+    form(action="").statistics__form
+      .statistics__form-group
+        label в период с
+        input(type="text" placeholder="дд.мм.гггг" required).date-input.statistics__form-input
+      .statistics__form-group
+        label по
+        input(type="text" placeholder="дд.мм.гггг" required).date-input.statistics__form-input
+      .statistics__form-group
+        button(type='submit').statistics__form-button.button.button_style1 Показать
+    .statistics__table
+      table
+        tr
+          th ДАТА ОПЕРАЦИИ
+          th СУММА, Р
+          th ОПИСАНИЕ
+          th ИСТОЧНИК ОПЕРАЦИИ
+        tr
+          td 579
+          td 100	
+          td Абонентская плата За период 01-02-2019 по 28-02-2019	
+          td Аренда IPTV приставки (Максимальный- 60 (Интернет+IPTV аренда))
+        tr
+          td 579
+          td 100	
+          td Абонентская плата За период 01-02-2019 по 28-02-2019	
+          td Аренда IPTV приставки (Максимальный- 60 (Интернет+IPTV аренда))

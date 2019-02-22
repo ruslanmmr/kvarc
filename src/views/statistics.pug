@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+    link(rel="stylesheet" href="styles/statistics.min.css")
+  body
+    //header
+    include blocks/header
+    include blocks/cabinet-head
+    include blocks/mobile-head
+    //page
+    .page.page_with-aside
+      .container
+        aside.aside
+          include blocks/personal-number
+          include blocks/desktop-nav
+          .banner2
+            a(href="").banner2__link
+              img(src="img/banners/banner2.jpg", alt="")
+        main.main
+          include blocks/statistics-block
+    //footer
+    include blocks/footer
+    include blocks/popup
+    script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
+    script(src="js/libs.min.js")                  
+    script(src="js/common.min.js")

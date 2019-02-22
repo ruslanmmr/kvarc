@@ -36,7 +36,7 @@
         | Услуга заблокирована
       span.myservices__text Если вы хотите приостановить оказание услуги на короткий период времени, нажимте кнопку «Отменить».
       .myservices__pause
-        span.myservices__pause-label Приостановить с
         form(action="").myservices__pause-form
-          input(type="text" placeholder="дд.мм.гггг" required).myservices__pause-date
+          label Приостановить с
+          input(type="text" placeholder="дд.мм.гггг" required).date-input.myservices__pause-date
           button(type='submit').myservices__pause-form-button.button.button_style1 Добровольная блокировка

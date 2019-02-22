@@ -28,9 +28,10 @@
         span.main-info__money-count 0 руб.
         span.main-info__subscriber-fee Абон. плата: 630 руб./мес.
       .main-info__form
-        span.main-info__form-title Оплатить до 25.11.2018
         form(action="")
-          input(type="number" required)
-          span.main-info__form-symbol.rub ₽
-          button(type="submit").button.button_style1 Пополнить
+          label до 25.11.2018
+          .main-info__form-group
+            input(type="number" required)
+            span.main-info__form-symbol.rub ₽
+            button(type="submit").button.button_style1 Пополнить
         a(href="#").main-info__link Подключить обещанный платеж

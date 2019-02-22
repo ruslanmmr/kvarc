@@ -17,6 +17,7 @@
     font-size: 16px;
     color: #676a6c;
     position: relative;
+    transition: 0.3s;
     &:after {
       content: '';
       display: block;
@@ -30,6 +31,9 @@
       background-size: 100%;
       transform: rotate(-90deg);
       opacity: 0.5;
+    }
+    &:hover {
+      background-color: rgb(245, 245, 245);
     }
   }
 }

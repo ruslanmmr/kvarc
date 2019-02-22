@@ -9,6 +9,12 @@ a {
   color: #8c79c0;
   text-decoration: none;
 }
+.main-link {
+  transition: color 0.3s;
+  &:hover {
+    color: #f98b21;
+  }
+}
 input,
 select {
   border-radius: 0;
@@ -24,6 +30,13 @@ select {
       opacity: 0;
     }
   }
+}
+label {
+  padding: 0 0 10px 0;
+  display: inline-block;
+  color: #b7b7b7;
+  font-size: 15px;
+  font-weight: 700;
 }
 body {
   text-rendering: optimizeSpeed;

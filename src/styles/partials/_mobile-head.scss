@@ -33,6 +33,7 @@
     border: 0;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
     span {
       display: block;
       width: 33px;
@@ -57,14 +58,19 @@
     &__item {
       color: #fff;
       font-size: 18px;
-      padding-left: 25px;
+      padding-left: 30px;
       height: 30px;
     }
-    &__button:before {
-      background: url('../img/icons/mobile-head-arrow.svg') no-repeat center center;
-      background-size: contain;
-      background-size: 10px 7px;
-      transform: rotate(0);
+    &__button {
+      background-color: transparent !important;
+      height: 30px;
+      width: 30px;
+      &:before {
+        background: url('../img/icons/mobile-head-arrow.svg') no-repeat center center;
+        background-size: contain;
+        background-size: 10px 7px;
+        transform: rotate(0);
+      }
     }
     &__button_active:before {
       transform: rotate(180deg);
@@ -125,7 +131,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 30px 15px 32px 15px;
+  padding: 20px 15px;
   z-index: 2;
   background-color: #fff;
   display: none;
@@ -138,6 +144,7 @@
   }
   &__nav-close {
     position: absolute;
+    cursor: pointer;
     right: 12px;
     width: 45px;
     height: 45px;

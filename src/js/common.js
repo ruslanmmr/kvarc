@@ -109,7 +109,7 @@ function mobileNav() {
   })  
 }
 function date() {
-  $('.myservices__pause-date').datepicker({
+  $('.date-input').datepicker({
     // Можно выбрать тольо даты, идущие за сегодняшним днем, включая сегодня
     minDate: new Date()
   })

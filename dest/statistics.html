@@ -19,7 +19,7 @@
     <!--styles for all pages-->
     <link rel="stylesheet" href="styles/libs.min.css">
     <link rel="stylesheet" href="styles/common.min.css">
-    <link rel="stylesheet" href="styles/myservices.min.css">
+    <link rel="stylesheet" href="styles/statistics.min.css">
   </head>
   <body>
     <!--header-->
@@ -109,32 +109,49 @@
           <div class="banner2"><a class="banner2__link" href=""><img src="img/banners/banner2.jpg" alt=""></a></div>
         </aside>
         <main class="main">
-          <div class="myservices">
-            <div class="myservices__container block__container">
-              <div class="myservices__section"><span class="myservices__title">Информация о контракте</span>
-                <div class="myservices__table">
-                  <div class="myservices__table-row"><span class="myservices__table-item">Номер контракта</span><span class="myservices__table-item">19579</span></div>
-                  <div class="myservices__table-row"><span class="myservices__table-item">Баланс</span><span class="myservices__table-item">27 Р</span></div>
-                </div><span class="myservices__title">Информация об услугах на контракте</span>
-                <div class="myservices__table">
-                  <div class="myservices__table-row"><span class="myservices__table-item">Название услуги</span><span class="myservices__table-item">Интернет+ТВ</span></div>
-                  <div class="myservices__table-row"><span class="myservices__table-item">Дата подключения</span><span class="myservices__table-item">29.09.2016 00.00.00</span></div>
-                  <div class="myservices__table-row"><span class="myservices__table-item">Статус</span><span class="myservices__table-item">Включен</span></div>
+          <div class="statistics">
+            <div class="statistics__container block__container">
+              <div class="statistics__nav">
+                <ul class="statistics__nav-list">
+                  <li class="statistics__nav-item"><a class="statistics__nav-link main-link" href="#">Сессии</a></li>
+                  <li class="statistics__nav-item"><a class="statistics__nav-link main-link" href="#">Трафик</a></li>
+                  <li class="statistics__nav-item"><a class="statistics__nav-link main-link statistics__nav-link_active" href="#">Платежи</a></li>
+                </ul>
+              </div><span class="statistics__text">На этой странице вы можете посмотреть информацию о совершенных выходах в интернет</span>
+              <form class="statistics__form" action="">
+                <div class="statistics__form-group">
+                  <label>в период с</label>
+                  <input class="date-input statistics__form-input" type="text" placeholder="дд.мм.гггг" required>
                 </div>
-                <div class="myservices__table">
-                  <div class="myservices__table-row"><span class="myservices__table-item">Название тарифного плана</span><span class="myservices__table-item">ех.ТП-1</span></div>
-                  <div class="myservices__table-row"><span class="myservices__table-item">Имя пользователя</span><span class="myservices__table-item">ivanovti12345</span></div>
-                  <div class="myservices__table-row"><span class="myservices__table-item">Стоимость</span><span class="myservices__table-item">0 Р</span></div>
+                <div class="statistics__form-group">
+                  <label>по</label>
+                  <input class="date-input statistics__form-input" type="text" placeholder="дд.мм.гггг" required>
                 </div>
-              </div>
-              <div class="myservices__section"><span class="activity-label activity-label_disable"><span> </span>Услуга заблокирована</span><span class="myservices__text">Если вы хотите приостановить оказание услуги на короткий период времени, нажимте кнопку «Отменить».</span>
-                <div class="myservices__pause">
-                  <form class="myservices__pause-form" action="">
-                    <label>Приостановить с</label>
-                    <input class="date-input myservices__pause-date" type="text" placeholder="дд.мм.гггг" required>
-                    <button class="myservices__pause-form-button button button_style1" type="submit">Добровольная блокировка</button>
-                  </form>
+                <div class="statistics__form-group">
+                  <button class="statistics__form-button button button_style1" type="submit">Показать</button>
                 </div>
+              </form>
+              <div class="statistics__table">
+                <table>
+                  <tr>
+                    <th>ДАТА ОПЕРАЦИИ</th>
+                    <th>СУММА, Р</th>
+                    <th>ОПИСАНИЕ</th>
+                    <th>ИСТОЧНИК ОПЕРАЦИИ</th>
+                  </tr>
+                  <tr>
+                    <td>579</td>
+                    <td>100	</td>
+                    <td>Абонентская плата За период 01-02-2019 по 28-02-2019	</td>
+                    <td>Аренда IPTV приставки (Максимальный- 60 (Интернет+IPTV аренда))</td>
+                  </tr>
+                  <tr>
+                    <td>579</td>
+                    <td>100	</td>
+                    <td>Абонентская плата За период 01-02-2019 по 28-02-2019	</td>
+                    <td>Аренда IPTV приставки (Максимальный- 60 (Интернет+IPTV аренда))</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
@@ -184,6 +201,101 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="popup popup__type1 modal_container mfp-with-anim mfp-hide" id="popup1">
+      <button class="popup__close popup-close"></button>
+      <div class="popup__container">
+        <h2 class="popup__title">Тарифы (ЦТВ)</h2>
+        <ul class="popup__list">
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Тариф Базовый</span><span class="action-label"><span>%</span>Акция</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">92</span><span class="popup__item-text">ТВ каналы</span></div>
+            <div class="popup__item-section"><span class="popup__item-old-price">400</span><span class="popup__item-price">310 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Пакет XL (Кино+Спорт)</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">12</span><span class="popup__item-text">ТВ каналы</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">498 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Спорт</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">4</span><span class="popup__item-text">ТВ каналы</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">149 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Кино</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">8</span><span class="popup__item-text">ТВ каналы</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">149 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Наш футбол</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">1</span><span class="popup__item-text">ТВ каналы</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">219 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Стартовый</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">45</span><span class="popup__item-text">ТВ каналы</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">195 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+        </ul><a class="popup__link button button_style2" href="#">Подключить Кабельное телевидение</a>
+      </div>
+    </div>
+    <div class="popup popup__type1 modal_container mfp-with-anim mfp-hide" id="popup2">
+      <button class="popup__close popup-close"></button>
+      <div class="popup__container">
+        <h2 class="popup__title">Тарифы</h2>
+        <ul class="popup__list">
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Интернет 30</span><span class="action-label"><span>%</span>Акция</span></div>
+            <div class="popup__item-section"><span class="popup__item-count">30 Мбит/с</span><span class="popup__item-text">Скорость</span></div>
+            <div class="popup__item-section"><span class="popup__item-old-price">717</span><span class="popup__item-price">399 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Интернет 60 </span></div>
+            <div class="popup__item-section"><span class="popup__item-count">60 Мбит/с</span><span class="popup__item-text">Скорость</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">449 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Интернет 100 </span></div>
+            <div class="popup__item-section"><span class="popup__item-count">100 Мбит/с</span><span class="popup__item-text">Скорость</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">649 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+          <li class="popup__item">
+            <div class="popup__item-section"><span class="popup__item-title">Интернет 350 </span></div>
+            <div class="popup__item-section"><span class="popup__item-count">350 Мбит/с</span><span class="popup__item-text">Скорость</span></div>
+            <div class="popup__item-section"><span class="popup__item-price">849 руб./мес</span></div>
+            <div class="popup__item-section"><a class="popup__item-link button button_style1" href="#">Подключить</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup popup__type2 modal_container mfp-with-anim mfp-hide" id="popup3">
+      <button class="popup__close popup-close"></button>
+      <div class="popup__container">
+        <h2 class="popup__title">Подтвержние операции</h2><span class="popup__sub-text">Для подтверждения операции введите код, отправленный на номер +7926*****56 или введите пуш-уведомление</span>
+        <form class="popup__form" action="">
+          <div class="popup__form-group">
+            <input class="popup__form-input" type="number" required placeholder="Введите код">
+          </div>
+          <ul class="popup__form-group-list">
+            <div class="popup__form-group-item">
+              <button class="button button_style3 popup__button popup-close">Отменить</button>
+            </div>
+            <div class="popup__form-group-item">
+              <button class="button button_style1 popup__button" type="submit">Отправить</button>
+            </div>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
