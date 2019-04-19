@@ -5,6 +5,7 @@ $(document).ready(function () {
   mobileNav();
   date();
   modalMagnificBasket();
+  autoBtnHeight();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -129,5 +130,27 @@ function modalMagnificBasket() {
   $('.popup-close').on('click', function() {
     $.magnificPopup.close();
   });
+}
+
+//buttons
+function autoBtnHeight() {
+  resize();
+  $(window).resize(function () {
+    resize();
+  });
+
+  function resize() {
+    var mh = 0,
+    $btn = $(".services__item-link");
+
+    $btn.css('height', 'auto');
+    $btn.each(function () {
+      var h_block = parseInt($(this).height());
+      if(h_block > mh) {
+        mh = h_block;
+      };
+    });
+    $btn.height(mh);
+  }
 }
 
