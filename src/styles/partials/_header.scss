@@ -1,7 +1,9 @@
 .header {
-  background-color: #505258;
   position: relative;
-  z-index: 2;
+  background-color: #fff;
+  z-index: 10;
+  border-top: 10px solid #66BF30;
+  padding: 15px 0 0 0;
   &__container {
     height: 50px;
     display: flex;
@@ -15,19 +17,25 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #79b74d;
+    background-color: #60B42D;
+    border-radius: 4px;
     color: #fff;
     text-decoration: none !important;
+    transition: 0.3s;
+    &:hover {
+      background-color: #098431;
+    }
   }
   &__numbers {
     height: 100%;
     display: flex;
     align-items: center;
     position: relative;
+    color: #000;
     &-ico {
       height: 27px;
       width: 27px;
-      background-color: #4d92e0;
+      background-color: #60B42D;
       border-radius: 100%;
       margin-right: 15px;
       position: relative;
@@ -47,7 +55,7 @@
     }
   }
   &__number {
-    color: #fff;
+    color: #000;
     span {
       color: #858684;
     }
@@ -86,58 +94,13 @@
   }
 }
 
-@media all and(max-width: 1180px) {
-  .header {
-    .container {
-      padding: 0 15px 0 0;
-    }
-  }
-}
 @media all and(max-width: 768px) {
   .header {
-    .container {
-      padding: 0 20px 0 0;
-    }
-    &__numbers-button {
-      display: block;
-    }
-    &__bell-link {
-      display: block;
-    }
-    &__numbers {
-      padding: 0 19px 0 7px;
-    }
-    &__numbers-dropdown {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      transform: translateY(100%);
-      background-color: #505258;
-      padding: 5px 19px 15px 7px;
-      text-align: right;
-      visibility: hidden;
-      opacity: 0;
-      left: 0;
-      .header__number {
-        margin: 0;
-        display: block;
-        white-space: nowrap;
-        margin-bottom: 10px;
-        &:last-child {
-          margin: 0;
-        }
-      }
-    }
-    &__numbers-ico {
-      display: none;
-    }
+    padding: 15px 0;
   }
 }
 @media all and(max-width: 576px) {
   .header {
-    .container {
-      padding: 0 20px 0 18px;
-    }
     &__page-link {
       padding: 0;
       font-size: 0;
@@ -148,14 +111,7 @@
       border-radius: 100%;
     }
   }
-}
-@media all and(max-width: 360px) {
-  .header {
-    &__number {
-      font-size: 13px;
-    }
-    &__numbers-button {
-      background-size: 10px auto;
-    }
+  .header__container {
+    height: auto;
   }
 }

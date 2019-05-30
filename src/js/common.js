@@ -72,16 +72,7 @@ function circles() {
       animationStep: 5,
       foregroundBorderWidth: 12,
       backgroundBorderWidth: 12,
-      foregroundColor: '#5393e9',
-      backgroundColor: '#dcdcdc',
-      animateInView: true
-    });
-    $(".services__item-circle-bonus").circliful({
-      animation: 1,
-      animationStep: 5,
-      foregroundBorderWidth: 12,
-      backgroundBorderWidth: 12,
-      foregroundColor: '#7ab651',
+      foregroundColor: '#66BF30',
       backgroundColor: '#dcdcdc',
       animateInView: true
     });
@@ -90,7 +81,7 @@ function circles() {
       animationStep: 5,
       foregroundBorderWidth: 12,
       backgroundBorderWidth: 12,
-      foregroundColor: '#7962a6',
+      foregroundColor: '#66BF30',
       backgroundColor: '#dcdcdc',
       animateInView: true
     });

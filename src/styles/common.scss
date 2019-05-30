@@ -12,15 +12,17 @@ a {
 .main-link {
   transition: color 0.3s;
   &:hover {
-    color: #f98b21;
+    color: #79b74d;
   }
 }
 input,
 select {
-  border-radius: 0;
+  border-radius: 4px;
+  background-color: #F1F1F1;
   appearance: none;
+  outline: none;
   height: 43px;
-  border: 1px solid #acacac;
+  border: 1px solid #E0E1E3;
   padding: 0 10px;
   &::placeholder {
     color: #adafb1;
@@ -92,20 +94,26 @@ body {
   }
 }
 .button {
-  height: 43px;
-  padding: 0 20px;
+  padding: 11px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s;
+  text-align: center;
+  transition: 0.3s;
   color: #fff;
   border: 0;
   cursor: pointer;
   outline: none;
   &_style1 {
-    background-color: #f98b21;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 4px;
+    border: 2px solid #64BC2F;
+    color: #64BC2F;
+    font-weight: bold;
     &:hover {
-      background-color: #fa9738;
+      background-color: #64BC2F;
+      color: #fff;
     }
   }
   &_style2 {

@@ -11,6 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    .button {
+      margin-top: 30px;
+    }
   }
   &__item-title {
     display: block;
@@ -42,24 +45,6 @@
       display: none;
     }
   }
-  &__item-link {
-    min-height: 43px;
-    text-align: center;
-    border: 1px solid #7c6aad;
-    margin-top: 35px;
-    color: #7c6aad;
-    display: block;
-    width: 100%;
-    padding: 11px 20px 11px 20px;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      background-color: #7c6aad;
-      color: #fff;
-    }
-  }
   &__item-count {
     font-size: 36px;
     color: #676a6c;
@@ -78,6 +63,7 @@
   .services {
     &__item {
       padding: 0 15px;
+      width: 50%;
     }
     &__content {
       margin: 0 -15px;
@@ -90,31 +76,8 @@
 }
 @media (max-width: 576px) {
   .services {
-    &__content {
-      margin: 0 -5px;
-    }
-    &__title {
-      padding-bottom: 5px;
-    }
     &__item {
-      padding: 0 5px;
-    }
-    &__item-circle {
-      width: 85px;
-      height: 85px;
-    }
-    &__item-title,
-    &__item-sub-title {
-      font-size: 12px;
-    }
-    &__item-count {
-      line-height: 90%;
-    }
-    &__item-link {
-      padding: 10px;
-      font-size: 12px;
-      margin-top: 30px;
-      min-height: 37px;
+      width: 50%;
     }
   }
 }

@@ -4,7 +4,7 @@
   position: relative;
   z-index: 2;
   .container {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 15px;
   }
   &__container {
     height: 170px;
@@ -15,7 +15,7 @@
     width: 100%;
     &_left {
       align-items: center;
-      padding-right: 120px;
+      padding-right: 250px;
       display: flex;
       align-items: center;
       flex-shrink: 0;
@@ -99,29 +99,29 @@
       width: 100%;
       bottom: -1px;
       left: 0;
-      background-color: #f98b21;
+      background-color: #66bf30;
       transition: transform 0.3s;
       transform: scaleX(0);
     }
     &:hover {
-      color: #f98b21;
+      color: #66bf30;
       &:before {
         transform: scaleX(1);
       }
       svg {
         path {
-          stroke: #f98e26 !important;
+          stroke: #66bf30 !important;
         }
       }
     }
     &_active {
-      color: #f98b21;
+      color: #66bf30;
       &:before {
         transform: scaleX(1);
       }
       svg {
         path {
-          stroke: #f98e26 !important;
+          stroke: #66bf30 !important;
         }
       }
     }
